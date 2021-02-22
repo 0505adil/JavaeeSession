@@ -1,0 +1,158 @@
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+        http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+
+    <servlet>
+        <servlet-name>s1</servlet-name>
+        <servlet-class>com.sample.FirstServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>s1</servlet-name>
+        <url-pattern>/servlet1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>s2</servlet-name>
+        <servlet-class>com.sample.SecondServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>s2</servlet-name>
+        <url-pattern>/servlet2</url-pattern>
+    </servlet-mapping>
+
+
+<!--    task 1-->
+    <servlet>
+        <description></description>
+        <display-name>LoginServlet</display-name>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.sample.logInOut.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description></description>
+        <display-name>ProfileServlet</display-name>
+        <servlet-name>ProfileServlet</servlet-name>
+        <servlet-class>com.sample.logInOut.ProfileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProfileServlet</servlet-name>
+        <url-pattern>/ProfileServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description></description>
+        <display-name>LogoutServlet</display-name>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.sample.logInOut.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+
+<!--    hidden form field-->
+
+    <servlet>
+        <servlet-name>hffs1</servlet-name>
+        <servlet-class>com.sample.hiddenFormField.FirstServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>hffs1</servlet-name>
+        <url-pattern>/hffservlet1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>hffs2</servlet-name>
+        <servlet-class>com.sample.hiddenFormField.SecondServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>hffs2</servlet-name>
+        <url-pattern>/hffservlet2</url-pattern>
+    </servlet-mapping>
+
+<!--    url rewriting-->
+
+
+    <servlet>
+        <servlet-name>urls1</servlet-name>
+        <servlet-class>com.sample.url.FirstServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>urls1</servlet-name>
+        <url-pattern>/urlservlet1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>urls2</servlet-name>
+        <servlet-class>com.sample.url.SecondServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>urls2</servlet-name>
+        <url-pattern>/urlservlet2</url-pattern>
+    </servlet-mapping>
+
+<!--    http session-->
+    <servlet>
+        <servlet-name>https1</servlet-name>
+        <servlet-class>com.sample.httpSes.FirstServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>https1</servlet-name>
+        <url-pattern>/httpservlet1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>https2</servlet-name>
+        <servlet-class>com.sample.httpSes.SecondServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>https2</servlet-name>
+        <url-pattern>/httpservlet2</url-pattern>
+    </servlet-mapping>
+
+<!--    http log in / out-->
+
+
+    <servlet>
+        <description></description>
+        <display-name>httpLoginServlet</display-name>
+        <servlet-name>httpLoginServlet</servlet-name>
+        <servlet-class>com.sample.httplog.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>httpLoginServlet</servlet-name>
+        <url-pattern>/httpLoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description></description>
+        <display-name>httpProfileServlet</display-name>
+        <servlet-name>httpProfileServlet</servlet-name>
+        <servlet-class>com.sample.httplog.ProfileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>httpProfileServlet</servlet-name>
+        <url-pattern>/httpProfileServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description></description>
+        <display-name>httpLogoutServlet</display-name>
+        <servlet-name>httpLogoutServlet</servlet-name>
+        <servlet-class>com.sample.httplog.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>httpLogoutServlet</servlet-name>
+        <url-pattern>/httpLogoutServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>
